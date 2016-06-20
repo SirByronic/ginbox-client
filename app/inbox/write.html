@@ -1,0 +1,95 @@
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	<!-- font awesome css -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body style="text-align:center; padding:1em">
+  <div class="container">
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+ <div class="mail-box">
+                  <aside class="sm-side">
+                      <div class="user-head">
+                          <a class="inbox-avatar" href="javascript:;">
+                              <img  width="64" hieght="60" src="{{image}}">
+                          </a>
+                          <div class="user-name">
+                              <h5><a href="#">{{fullName}}</a></h5>
+                              <span><a href="#">{{email}}</a></span>
+                          </div>
+                          <a class="mail-dropdown pull-right" href="javascript:;">
+                              <i class="fa fa-chevron-down"></i>
+                          </a>
+                      </div>
+                      <div class="inbox-body">
+                          <a href="#!/inbox/write" title="Compose"    class="btn btn-compose">
+                              Compose
+                          </a>
+                      </div>
+                      <ul class="inbox-nav inbox-divider">
+                          <li class="active">
+                              <a href="#!/inbox"><i class="fa fa-inbox"></i> Inbox <span class="label label-danger pull-right">2</span></a>
+
+                          </li>
+                          <li>
+                              <a href="#!/inbox/sent"><i class="fa fa-envelope-o"></i> Sent Mail</a>
+                          </li>
+                          <li>
+                              <a href="#!/inbox/important"><i class="fa fa-bookmark-o"></i> Important</a>
+                          </li>
+                          <li>
+                              <a href="#!/inbox/draft"><i class=" fa fa-external-link"></i> Drafts <span class="label label-info pull-right">30</span></a>
+                          </li>
+                          <li>
+                              <a href="#!/inbox/trash"><i class=" fa fa-trash-o"></i> Trash</a>
+                          </li>
+                      </ul>
+
+
+
+                  </aside>
+                  <aside class="lg-side">
+                      <div class="inbox-head">
+                          <h3>Send email</h3>
+                      </div>
+                      <div class="inbox-body">
+                        <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">To</label>
+                                <div class="col-lg-10">
+                                    <autocomplete data="contacts" type="text" ng-model="email_object.to" attr-placeholder="" id="inputEmail1" attr-input-class="form-control"></autocomplete>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Subject</label>
+                                <div class="col-lg-10">
+                                    <input type="text" ng-model="email_object.subject" placeholder="" id="inputPassword1" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Message</label>
+                                <div class="col-lg-10">
+                                    <textarea rows="10" ng-model="email_object.content" cols="30" class="form-control" id="" name=""></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button ng-click="send(email_object)" class="btn btn-send" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                      </div>
+                  </aside>
+              </div>
+</div>
+</body>
+<html>
