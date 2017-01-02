@@ -1,4 +1,4 @@
-# The Gmail Inbox App Client in Angular - Hidden Founders Test Project
+# The Gmail Inbox App Client in Angular 
 
 Using Angular JS to build the Gmail Inbox App Client
 
